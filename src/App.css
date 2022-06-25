@@ -1,0 +1,130 @@
+/* Header */
+@media (max-width: 575px) {
+  .dropdown-menu {
+    width: 330px !important;
+  }
+}
+/* Page */
+.page {
+  display: flex;
+}
+.side {
+  height: 86vh;
+  background-color: #343a40;
+  padding: 15px;
+  margin: 10px 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.side h2 {
+  font-weight: normal;
+}
+@media (max-width: 575px) {
+  .page .btn {
+    font-size: 14px;
+  }
+}
+/* Home Page */
+.products {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media (max-width: 800px) {
+  .products {
+    padding: 0;
+  }
+}
+.products .card {
+  margin: 10px;
+}
+@media (max-width: 800px) {
+  .products .card {
+    width: 100% !important;
+  }
+}
+.filter {
+  width: 20%;
+}
+@media (max-width: 800px) {
+  .filter {
+    width: 40%;
+  }
+}
+@media (max-width: 576px) {
+  .filter form {
+    font-size: 14px;
+  }
+}
+.filter form > div {
+  display: flex;
+  align-items: center;
+}
+.filter input {
+  margin-right: 8px;
+}
+.filter .rating {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 575px) {
+  .filter .rating {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.filter .rating label {
+  margin-right: 8px;
+}
+.clickable {
+  cursor: pointer;
+}
+.disabled {
+  pointer-events: none;
+}
+/* Cart Page */
+@media (max-width: 575px) {
+  .list-group {
+    padding: 10px !important;
+  }
+}
+.cartItem {
+  width: 90%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+}
+.cartItem-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.cartItem-details {
+  margin-left: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.summary {
+  width: 30%;
+}
+@media (max-width: 800px) {
+  .summary {
+    width: 40%;
+  }
+}
+@media (max-width: 575px) {
+  .summary h2 {
+    font-size: 20px;
+  }
+  .summary h5 {
+    font-size: 16px;
+  }
+  .summary .btn {
+    font-size: 14px;
+  }
+}
